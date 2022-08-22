@@ -61,10 +61,22 @@ header{
 .container_icon{
     display: flex;
     justify-content: space-around;
+    animation: movimiento_iconos 10s; animation-iteration-count: infinite;
+    width: 100%;
+
+
+}
+@keyframes movimiento_iconos{
+    from{
+        margin-left:100% ;
+    }
+    to{
+        margin-left: -100%;
+    }
 }
 .container_icon div{
     display: block;
-    justify-content: center;
+    
 }
 .icon{
     width: 100px;
@@ -98,6 +110,57 @@ header{
 .img-c{
     width: 500px;
 }
+
+
+/* footer */
+#copiar{
+    border: none;
+    background-color: transparent;
+}
+#vuelta{
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: black;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    margin-left:100px ;
+    border: none;
+}
+#vuelta a {
+    color: white;
+    text-decoration: none;
+}
+.pie div{
+    display: flex;
+    justify-content: space-around;
+}
+.pie{
+    width: 100%;
+    background-color:#554994;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.pie h4{
+    font-size: 1.7rem;
+    margin-top: 20px;
+}
+.pie ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 50px;
+}
+.img_contactos{
+    margin-bottom: 20px;
+}
+
+
+/* mediaqueris */
 @media only screen and (max-width: 1600px){
     .img_certificados{
         display:block;
